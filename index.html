@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/angular.min.js"></script>
+	 <link rel="stylesheet" href="css/w3.css">
+	   <link rel="stylesheet" href="css/graph.coloring.css">
+	   
+    <script src="js/cytoscape.min.js"></script>
+	<script src="js/graph.coloring.config.js"></script>
+	<script src="js/graph.coloring.js"></script>
+	
+</head>
+
+<body>
+    <div ng-app="graphColoring" ng-controller="myCtrl" class="w3-card-2 margin-left-top" style="max-width:500px;">
+        <header class="w3-container w3-light-grey w3-padding-16">
+            <h3>Graph Coloring</h3>
+            <p>Graph size {{dict.graphSize}}</p>
+        </header>
+
+        <ul class="w3-ul">
+            <li class="w3-padding-16" ng-repeat="x in dict">{{x.key}} : {{x.value}}
+                <span style="cursor:pointer;" class="w3-right w3-margin-right" ng-click="removeItem($index)">&times;</span>
+            </li>
+        </ul>
+		<div class="w3-container w3-light-grey w3-padding-16">
+		<div class="w3-row w3-margin-top">
+      <div class="w3-col s10">
+	   <input placeholder="Set graph size" ng-model="graphSize" class="w3-input w3-border w3-padding">
+	   </div>
+        <div class="w3-col s2">
+           
+            <button ng-click="setGraphSize()" class="w3-btn w3-padding w3-green">Add</button>
+        
+		</div>
+		<div class="w3-col s5">
+		 <input ng-model=" key" class="w3-input w3-border w3-padding" input placeholder="Edge start point" >
+		</div>
+		<div class="w3-col s5">
+            <input ng-model=" value" class="w3-input w3-border w3-padding" input placeholder="Edge end point" >
+		</div>
+        <div class="w3-col s2">
+           
+            <button ng-click="addCordinate()" class="w3-btn w3-padding w3-green">Add</button>
+            
+        </div>
+		
+        <div  class="w3-col s2  submit-padding">
+            <button ng-click="sendData()" class="w3-btn w3-padding w3-green">Submit</button>
+        </div>
+		 <div  class="w3-col s10">
+		<p class="w3-text-red" >{{errortext}}</p>
+		</div>
+    </div>
+	</div>
+	</div>
+    <div id="cy"></div>
+</body>
+
+</html>

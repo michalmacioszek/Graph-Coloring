@@ -1,0 +1,19 @@
+ body {
+            font: 14px helvetica neue, helvetica, arial, sans-serif;
+        }
+
+        #cy {
+            height: 70%;
+            width: 100%;
+            position: absolute;
+            left: 0;
+            padding-top: 0%;
+        }
+
+   .margin-left-top {
+       margin: 2% 0% 0% 34%!important;
+}
+    .submit-padding{
+        padding-top: 2%;
+    margin-right: 1%;
+    }
