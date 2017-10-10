@@ -16,7 +16,7 @@ and converted from Java to C# code from
 **To run this project:**
 - Download and install Visual Studio 2015 Community. 
 - Open API.sln  file and run server.
-- Copy server port and paste to graph.coloring.config.js file. 
+- Copy server port and paste to graph.coloring.config.js file(ignore HTTP Error 403.14). 
 - Open index.html in browser.
 
 ### Licence
