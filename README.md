@@ -1,6 +1,9 @@
 # Graph-Coloring
 AngularJS and C# app for graph coloring
 
+![graph2](https://user-images.githubusercontent.com/32664400/31376452-5253ccd8-ada5-11e7-99f8-3ee50d0fad6b.png)
+
+
 This software use 
 [AngularJS](https://github.com/angular/angular.js?files=1),
 [Cytoscape](https://github.com/cytoscape/cytoscape.js?files=1),
